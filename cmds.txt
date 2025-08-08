@@ -1,0 +1,36 @@
+go install github.com/beego/bee/v2@latest
+
+go get github.com/beego/beego/v2/client/cache@v2.1.0
+
+bee new webgofirst // create web applications
+bee api apiproject // create API applications
+
+go mod tidy
+
+bee run
+
+
+use local session for 
+
+https://beegodoc.com/en-US/v2.0.x/bee/#bee-tool-commands
+
+===============================================
+- BeforeRouter: filter is executed before the request reaches the router, 
+allowing you to perform authentication, authorization, or other checks. 
+It's typically used for tasks like logging, authentication, or setting up session data 
+- BeforeExec: This filter is executed before the execution of the controller 
+method, allowing you to perform tasks like setting up the request or response 
+objects
+- AfterExec: This filter is executed after the execution of the controller 
+method, allowing you to perform tasks like logging or setting up the response 
+- FinishRouter: This filter is executed after the request has been processed 
+by the router, allowing you to perform tasks like setting up the response or 
+logging
+
+====================================
+git init
+git add .
+git status
+git commit -m "first commit"
+git remote add origin https://github.com/ostertagi/webgofirst.git
+git push -u origin master
